@@ -21,3 +21,36 @@ function getMin(arr) {
   return sorted[0]
 }
 
+function getMinMax(arr) {
+  let min =  getMin(arr);
+  let max = getMax(arr);
+  return [min, max];
+}
+
+console.log(getMinMax(dataArr));
+
+let [minArr, maxArr] = getMinMax(dataArr);
+
+console.log(minArr, maxArr);
+
+class Pair {
+  min;
+  max;
+  constructor(min1, max1) {
+    this.min = min1;
+    this.max = max1;
+  }
+}
+
+let newPair = new Pair(minArr,maxArr);
+
+function addMinMax({min,max}) {
+  return min + max;
+}
+let result = addMinMax(newPair);
+console.log(result);
+
+console.log(`Our object has min ${minArr} and max ${maxArr}, with a total of ${result}`);
+
+let jsonObj = JSON.stringify(newPair);
+console.log(jsonObj);
