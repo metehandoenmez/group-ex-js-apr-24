@@ -27,15 +27,15 @@ function getMinMax(arr) {
   return [min, max];
 }
 
-let [min, max] = getMinMax(dataArr);
+let [minVar1, maxVar1] = getMinMax(dataArr);
 
 class Pair {
   min;
   max;
   useless;
-  constructor(min, max) {
-    this.min = min;
-    this.max = max;
+  constructor(minConstrArg1, maxConstrArg1) {
+    this.min = minConstrArg1;
+    this.max = maxConstrArg1;
     this.useless = -10;
   }
 }
@@ -44,7 +44,7 @@ function addMinMax({ min, max }) {
   return min + max;
 }
 
-let obj1 = new Pair(min, max);
+let obj1 = new Pair(minVar1, maxVar1);
 console.log(obj1);
 
 let result = addMinMax(obj1);
