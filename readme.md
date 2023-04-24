@@ -15,7 +15,7 @@ Define a function addMinMax that uses destructuring {} to extract only the min a
 
 Print a template string that looks like: "Our object has min [number here] and max [number here], with a total of [number here]"
 
-Convert the given class object to a JSON object.
+Convert the given class object to a JSON string.
 
 
 
