@@ -50,7 +50,12 @@ function addMinMax({min,max}) {
 let result = addMinMax(newPair);
 console.log(result);
 
+console.log('Our object has min ${minArr} and max ${maxArr}, with a total of ${result}'); //${} does not work
+console.log("Our object has min ${minArr} and max ${maxArr}, with a total of ${result}"); //${} does not work
 console.log(`Our object has min ${minArr} and max ${maxArr}, with a total of ${result}`);
 
 let jsonObj = JSON.stringify(newPair);
 console.log(jsonObj);
+
+let jsObj = JSON.parse(jsonObj);
+console.log(jsObj);
